@@ -1,0 +1,42 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### MAC Related ###
+*.DS_Store
+
+### logs ###
+logs/
+log/
+
+### Application ###
+bin/
+_site/
+__pycache__/
+.vscode/
+*.pyc
+*.releaseBackup
+
+## Python Inrterpreter For IDEA
+venv/*
