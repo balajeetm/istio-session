@@ -28,6 +28,11 @@ kubectl apply -f reviews-deny-all.yaml
 Apply the [updated authorization policy](reviews-allow-productpage.yaml) to allow service access:
 
 ```
+kubectl delete -f reviews-deny-all.yaml
+```
+> Check http://localhost/productpage
+
+```
 kubectl apply -f reviews-allow-productpage.yaml
 ```
 

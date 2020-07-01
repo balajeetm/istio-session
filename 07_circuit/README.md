@@ -60,3 +60,14 @@ kubectl describe dr details
 ```
 
 > Browse http://localhost/productpage & confirm that pods that return errors get excluded - after a while there are no errors, requests only go to healthy pods.
+
+## 7.3 Clean up for the next demo
+
+Reset to default state (Istio & book-info deployed):
+
+```
+kubectl delete -f ../reset/
+```
+```
+kubectl apply -f ../setup/
+```

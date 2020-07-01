@@ -63,3 +63,14 @@ kubectl apply -f reviews-v2-tester-503.yaml
 ```
 
 > Browse to http://localhost/productpage -  `testuser` gets 50% failures, all others OK
+
+## 4.5 Clean up for the next demo
+
+Reset to default state (Istio & book-info deployed):
+
+```
+kubectl delete -f ../reset/
+```
+```
+kubectl apply -f ../setup/
+```

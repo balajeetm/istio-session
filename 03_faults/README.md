@@ -52,3 +52,14 @@ kubectl apply -f details-virtualservice-retry.yaml
 ```
 
 > Browse to http://localhost/productpage - details call times out and then automatically retries
+
+## 3.5 Clean up for the next demo
+
+Reset to default state (Istio & book-info deployed):
+
+```
+kubectl delete -f ../reset/
+```
+```
+kubectl apply -f ../setup/
+```

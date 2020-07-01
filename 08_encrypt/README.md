@@ -128,3 +128,14 @@ cat /etc/certs/cert-chain.pem | openssl x509 -text -noout  | grep Validity -A 2
 
 cat /etc/certs/cert-chain.pem | openssl x509 -text -noout  | grep 'Subject Alternative Name' -A 1
 ```
+
+## 8.7 Clean up for the next demo
+
+Reset to default state (Istio & book-info deployed):
+
+```
+kubectl delete -f ../reset/
+```
+```
+kubectl apply -f ../setup/
+```

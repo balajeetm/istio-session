@@ -85,3 +85,14 @@ kubectl apply -f productpage-live-to-test.yaml
 > Live is back to v1 http://bookinfo.com/productpage
 
 > Test is back to v2 http://test.bookinfo.com/productpage
+
+## 5.4 Clean up for the next demo
+
+Reset to default state (Istio & book-info deployed):
+
+```
+kubectl delete -f ../reset/
+```
+```
+kubectl apply -f ../setup/
+```

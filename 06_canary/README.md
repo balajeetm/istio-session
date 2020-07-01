@@ -10,6 +10,10 @@ kubectl delete -f ../reset/
 ```
 kubectl apply -f ../setup/
 ```
+
+## 6.0.1 V2
+
+Deploy productpage v2:
 ```
 kubectl apply -f productpage-v2.yaml
 ```
@@ -60,3 +64,14 @@ _e.g. in Chrome_
 - Add `bookinfo.com`
 
 > Browse to http://bookinfo.com/productpage & refresh - back to 70/30 split
+
+## 6.4 Clean up for the next demo
+
+Reset to default state (Istio & book-info deployed):
+
+```
+kubectl delete -f ../reset/
+```
+```
+kubectl apply -f ../setup/
+```
